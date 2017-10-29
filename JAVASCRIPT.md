@@ -1,39 +1,10 @@
-# tabs
-```js
-addTab(component?: Component);
-removeTab();
-selectTab(index: number);
+## XSS攻击
+主要是注入脚本，如论坛里面用户输入<script>alert();</script>，页面回显的时候如果没有处理js脚本，就可能造成攻击。angular的$sce就是用来处理XSS攻击的。
 
-addComponent(component: Component);
-removeComponent(component: Component);
-replaceComponent(component: Component);
-```
+## CXRF攻击
+http://www.cnblogs.com/hyddd/archive/2009/04/09/1432744.html
 
-```js
+https://mp.weixin.qq.com/s/WbrXl2PS4Kh7JtqXRCGAzQ
 
-<router-tabs>
-  <router-tab [component]="" [tabid]="" [current]=""></router-tab>
-  <router-tab></router-tab>
-</router-tabs>
+https://item.jd.com/12878817351.html
 
-class Test(){
-  constructor(private router: Router){
-      
-      router.selectTab(tabId);
-      
-      router.pushRouterTab(routerTab)
-      
-      router.addTab(tabId);
-      
-      router.deleteTab(tabId);
-  
-  }
-}
-
-
-```
-
-
-# url
-
-http://bbs.gamebean.net/index/!/tabid/router
