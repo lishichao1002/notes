@@ -1,10 +1,36 @@
 ## 大纲
+* 推荐书籍
+* 目前前端项目
 * XSS攻击
 * CXRF攻击
 * 界面操作劫持
 * 漏洞挖掘
-* 目前前端项目
-* 推荐书籍
+
+### 书籍
+
+1. [Web前端黑客技术揭秘](https://item.jd.com/12878817351.html) [Web前端黑客技术揭秘(视频)](https://ke.qq.com/course/133640)
+2. [白帽子讲Web安全](https://item.jd.com/11483966.html)
+3. [白帽子讲Web扫描](https://item.jd.com/15503446687.html)
+
+
+### 目前前端项目
+
+目前是基于Angular的工程。使用webpack对js代码进行加密，混淆，中文Base64处理。
+
+1. [Angular安全](https://angular.cn/guide/security)
+    * bypassSecurityTrustHtml
+    * bypassSecurityTrustScript
+    * bypassSecurityTrustStyle
+    * bypassSecurityTrustUrl
+    * bypassSecurityTrustResourceUrl
+2. [Angular安全：xsrf-防护](https://angular.cn/guide/http#安全：xsrf-防护)
+2. [Angular安全：xssi-防护](https://angular.cn/guide/security#xssi)
+3. [Angularjs xss防护：$sce服务](https://docs.angularjs.org/api/ng/service/$sce#use-the-latest-angularjs-possible)
+    * trustAsHtml(value)
+    * trustAsCss(value)
+    * trustAsUrl(value)
+    * trustAsResourceUrl(value)
+    * trustAsJs(value)
 
 ### XSS攻击
 [百度百科](https://baike.baidu.com/item/XSS%E6%94%BB%E5%87%BB/954065?fr=aladdin)
@@ -40,29 +66,3 @@
 2. 界面操作劫持漏洞挖掘
 
     ![csrf](./img/2017-11-15_114735.png)
-
-
-### 目前前端项目
-
-目前是基于Angular的工程。使用webpack对js代码进行加密，混淆，中文Base64处理。
-
-1. [Angular安全](https://angular.cn/guide/security)
-    * bypassSecurityTrustHtml
-    * bypassSecurityTrustScript
-    * bypassSecurityTrustStyle
-    * bypassSecurityTrustUrl
-    * bypassSecurityTrustResourceUrl
-2. [Angular安全：xsrf-防护](https://angular.cn/guide/http#安全：xsrf-防护)
-2. [Angular安全：xssi-防护](https://angular.cn/guide/security#xssi)
-3. [Angularjs xss防护：$sce服务](https://docs.angularjs.org/api/ng/service/$sce#use-the-latest-angularjs-possible)
-    * trustAsHtml(value)
-    * trustAsCss(value)
-    * trustAsUrl(value)
-    * trustAsResourceUrl(value)
-    * trustAsJs(value)
-
-### 书籍
-
-1. [Web前端黑客技术揭秘](https://item.jd.com/12878817351.html) [Web前端黑客技术揭秘(视频)](https://ke.qq.com/course/133640)
-2. [白帽子讲Web安全](https://item.jd.com/11483966.html)
-3. [白帽子讲Web扫描](https://item.jd.com/15503446687.html)
