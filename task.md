@@ -1,5 +1,6 @@
 ## 前端
 * Angular
+* Immutable
 * Angular性能优化
 * 前端测试
 * 动画
