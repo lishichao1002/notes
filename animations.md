@@ -31,5 +31,9 @@ transition-duration: .5s, 1s;
 transition-timing-function: ease-in, linear;
 ```
 
+TransitionEnd Event
+```
+document.querySelector("#id").addEventListener("transitionend", () = >, false);
+```
 
 # Scripted / JavaScript Animations
