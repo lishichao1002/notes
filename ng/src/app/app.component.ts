@@ -1,6 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from "@angular/core";
 import {fromEvent} from "rxjs/observable/fromEvent";
-import {debounceTime, distinctUntilChanged, map, pluck} from "rxjs/operators";
+import {bufferCount, debounceTime, distinctUntilChanged, map, pluck} from "rxjs/operators";
 import {Observable} from "rxjs/Observable";
 import {Subject} from "rxjs/Subject";
 import {AppService} from "./app.service";
@@ -8,6 +8,7 @@ import {fromPromise} from "rxjs/observable/fromPromise";
 import {bindCallback} from "rxjs/observable/bindCallback";
 import {from} from "rxjs/observable/from";
 import {of} from "rxjs/observable/of";
+import {range} from "rxjs/observable/range";
 
 @Component({
     selector: 'app-root',
@@ -93,6 +94,12 @@ export class AppComponent implements OnInit {
 
         //of
         this.foods$ = of(foods);
+
+        //range
+        this.foods$ = range(1, 10).pipe(
+            map(num => ({value: num, viewValue: `index: ${num}`})),
+            bufferCount(10)
+        );
 
     }
 
