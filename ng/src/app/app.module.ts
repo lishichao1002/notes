@@ -3,7 +3,7 @@ import {NgModule} from "@angular/core";
 
 import {AppComponent} from "./app.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {MatGridListModule, MatInputModule, MatSelectModule, MatToolbarModule} from "@angular/material";
+import {MatButtonModule, MatGridListModule, MatInputModule, MatSelectModule, MatToolbarModule} from "@angular/material";
 import {AppService} from "./app.service";
 
 
@@ -17,7 +17,8 @@ import {AppService} from "./app.service";
         MatInputModule,
         MatSelectModule,
         MatGridListModule,
-        MatToolbarModule
+        MatToolbarModule,
+        MatButtonModule
     ],
     providers: [
         AppService

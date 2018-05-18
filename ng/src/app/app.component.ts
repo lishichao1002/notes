@@ -1,14 +1,26 @@
 import {Component, ElementRef, OnInit, ViewChild} from "@angular/core";
 import {fromEvent} from "rxjs/observable/fromEvent";
-import {bufferCount, debounceTime, distinctUntilChanged, map, pluck} from "rxjs/operators";
+import {
+    bufferCount,
+    bufferTime,
+    concatMap,
+    debounceTime,
+    distinctUntilChanged,
+    map,
+    pluck,
+    reduce,
+    takeWhile,
+    tap
+} from "rxjs/operators";
 import {Observable} from "rxjs/Observable";
 import {Subject} from "rxjs/Subject";
 import {AppService} from "./app.service";
 import {fromPromise} from "rxjs/observable/fromPromise";
-import {bindCallback} from "rxjs/observable/bindCallback";
 import {from} from "rxjs/observable/from";
 import {of} from "rxjs/observable/of";
 import {range} from "rxjs/observable/range";
+import {timer} from "rxjs/observable/timer";
+import {interval} from "rxjs/observable/interval";
 
 @Component({
     selector: 'app-root',
@@ -38,7 +50,7 @@ import {range} from "rxjs/observable/range";
                 </mat-select>
             </mat-grid-tile>
             <mat-grid-tile>
-
+                <button mat-raised-button> {{(timer$ | async)}} s</button>
             </mat-grid-tile>
         </mat-grid-list>
 
@@ -56,6 +68,7 @@ export class AppComponent implements OnInit {
     input1$: Observable<any>;
     input2$: Subject<any> = new Subject();
     foods$: Observable<{ value, viewValue }[]>;
+    timer$: Observable<number>;
 
     constructor(private service: AppService) {
     }
@@ -87,7 +100,7 @@ export class AppComponent implements OnInit {
         }));
 
         //bindCallback
-        this.foods$ = bindCallback((callback: (foods: { value, viewValue }[]) => { value, viewValue }[]) => callback(foods))();
+        // this.foods$ = bindCallback((callback: (foods: { value, viewValue }[]) => { value, viewValue }[]) => callback(foods))();
 
         //from
         this.foods$ = from([foods]);
@@ -101,6 +114,26 @@ export class AppComponent implements OnInit {
             bufferCount(10)
         );
 
+        //interval
+        this.foods$ = interval(1000).pipe(
+            map(num => ({value: num, viewValue: `index: ${num}`})),
+            bufferTime(10000)
+        );
+
+        //timer
+        this.timer$ = timer(0, 1000).pipe(
+            map(val => 60 - val),
+            takeWhile(val => val >= 0)
+        );
+
+        from([3, 5, 4]).pipe(
+            concatMap((num) => this.service.getFoods2(num))
+        ).subscribe((val) => {
+            console.warn('xxx', val);
+        })
+
+
+        //https://medium.com/upday-devs/rxjava-subscribeon-vs-observeon-9af518ded53a
     }
 
     otherOperate() {
