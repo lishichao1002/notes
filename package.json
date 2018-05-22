@@ -1,0 +1,22 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pushstate-server vue 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lishichao1002/notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lishichao1002/notes/issues"
+  },
+  "homepage": "https://github.com/lishichao1002/notes#readme",
+  "devDependencies": {
+    "pushstate-server": "^3.0.1"
+  }
+}

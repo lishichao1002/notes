@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{title}}</h1>
+    <input type="text">
+    <p>{{content}}</p>
+</div>
+
+<script src="vue.js"></script>
+<script>
+
+    let vue = new Vue({
+        data: {
+            title: 'hello vue',
+            content: 'hello content'
+        },
+        el: document.getElementById('app')
+    });
+
+    setTimeout(() => {
+        vue.title = 'hello my vue';
+        vue.content = 'the content';
+    }, 3000);
+
+</script>
+
+
+</body>
+</html>
