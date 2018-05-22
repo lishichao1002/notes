@@ -1,3 +1,5 @@
-/.idea
 /ng-async-router
 /node_modules
+.idea
+package-lock.json
+node_modules

@@ -1,6 +1,7 @@
 {
   "name": "notes",
   "version": "1.0.0",
+  "description": "### 教程 * [es6](http://es6.ruanyifeng.com/)  * [typescript](https://www.tslang.cn/) * [angular](https://angular.cn/) * [ngcourse2](https://www.gitbook.com/book/rangle-io/ngcourse2) * [rxjs](https://www.gitbook.com/book/buctwbzs/rxjs/details) * [javascript source map](http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html) * [JS函数式编程指南](https://www.gitbook.com/book/llh911001/mostly-adequate-guide-chinese/details)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,12 +11,15 @@
     "type": "git",
     "url": "git+https://github.com/lishichao1002/notes.git"
   },
-  "author": "",
+  "author": "lsc",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lishichao1002/notes/issues"
   },
   "homepage": "https://github.com/lishichao1002/notes#readme",
+  "dependencies": {
+    "rxjs": "^6.1.0"
+  },
   "devDependencies": {
     "pushstate-server": "^3.0.1"
   }
