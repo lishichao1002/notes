@@ -11,3 +11,4 @@
 * [PageSpeed Insights](https://developers.google.com/speed/docs/insights/about)
 * [High Performance Browser Networking](https://hpbn.co/)
 * [https://csstriggers.com/](https://csstriggers.com/)
+* [https://speedcurve.com/blog/user-timing-and-custom-metrics/](https://speedcurve.com/blog/user-timing-and-custom-metrics/)
