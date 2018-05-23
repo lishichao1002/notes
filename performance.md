@@ -12,3 +12,4 @@
 * [High Performance Browser Networking](https://hpbn.co/)
 * [https://csstriggers.com/](https://csstriggers.com/)
 * [https://speedcurve.com/blog/user-timing-and-custom-metrics/](https://speedcurve.com/blog/user-timing-and-custom-metrics/)
+* [https://mp.weixin.qq.com/s/KxJttCVuCoIrm9RAjRBrdg](https://mp.weixin.qq.com/s/KxJttCVuCoIrm9RAjRBrdg)
