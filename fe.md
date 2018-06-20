@@ -1,4 +1,4 @@
-#### 必看(面试、工作直接会用到)
+### 必看(面试、工作直接会用到)
 * html
   * 传智播客视频教程百度云 https://pan.baidu.com/s/1i5oXHjv 原文链接 http://yun.itheima.com/course/183.html
 * css
@@ -16,7 +16,8 @@
 * git、svn  https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000   https://legacy.gitbook.com/book/bingohuang/progit2/details
 * linux https://legacy.gitbook.com/book/wizardforcel/vbird-linux-basic-4e/details
 
-#### 高级(可以在工作中慢慢学习、走技术路线的话得看)
+  ![](./img/linux.png)
+### 高级(可以在工作中慢慢学习、走技术路线的话得看)
 
 * rxjs https://cn.rx.js.org/manual/index.html
 
@@ -28,7 +29,7 @@
 
 * javascript api可用性设计 https://www.smashingmagazine.com/2012/10/designing-javascript-apis-usability/
 
-#### 前端最全的资料，包含计划所有前端设计的东西，需要自己去选择学什么
+### 前端最全的资料，包含计划所有前端设计的东西，需要自己去选择学什么
 
 前端开发人员手册2018年 https://github.com/FrontendMasters/front-end-handbook-2018
 
