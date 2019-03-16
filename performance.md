@@ -13,3 +13,4 @@
 * [https://csstriggers.com/](https://csstriggers.com/)
 * [https://speedcurve.com/blog/user-timing-and-custom-metrics/](https://speedcurve.com/blog/user-timing-and-custom-metrics/)
 * [https://mp.weixin.qq.com/s/KxJttCVuCoIrm9RAjRBrdg](https://mp.weixin.qq.com/s/KxJttCVuCoIrm9RAjRBrdg)
+* [蚂蚁金服如何把前端性能监控做到极致?](https://www.infoq.cn/article/Dxa8aM44oz*Lukk5Ufhy)
