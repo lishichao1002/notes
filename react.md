@@ -6,6 +6,9 @@
 * react-redux
 * react-i18n
 * react-ui组件库及ui组件库开发
+  * ant-design
+    * context用法
+    * 父子组件交互用法
 * react-es6/typescript
 * react-开发规范
 * react-ssr
