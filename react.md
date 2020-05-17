@@ -2,6 +2,7 @@
 
 * react官网基本文档
 * react-cli
+  * create-react-app
 * react-router
 * react-redux
 * react-i18n
