@@ -4,6 +4,12 @@
 * react-cli
   * create-react-app
 * react-router
+  * 路由正则
+  * 路由传参
+  * 路由守卫
+  * 异步路由
+  * 父子路由
+  * 命名路由
 * react-redux
 * react-i18n
 * react-ui组件库及ui组件库开发
