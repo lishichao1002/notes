@@ -1,0 +1,31 @@
+## react学习内容
+
+* react官网基本文档
+  * 创建组件的几种方式
+  * 组件输入输出
+  * state、prop
+  * refs
+  * context
+* react-cli
+  * create-react-app
+* react-router
+  * 路由正则
+  * 路由传参
+  * 路由守卫
+    * 无内置，需要自己实现
+  * 异步路由
+  * 父子路由
+  * 命名路由
+* react-redux
+* react-i18n
+* react-ui组件库及ui组件库开发
+  * ant-design
+    * context用法
+    * 父子组件交互用法
+* react-es6/typescript
+* react-开发规范
+* react-ssr
+* react-性能瓶颈及优化
+* react全家桶源码
+* react面试题中的要点
+  * https://juejin.im/post/5cf0733de51d4510803ce34e#heading-47
