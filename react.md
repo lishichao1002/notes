@@ -11,12 +11,16 @@
 * react-router
   * 路由正则
   * 路由传参
-  * 路由守卫
+  * ~~路由守卫~~
     * 无内置，需要自己实现
   * 异步路由
   * 父子路由
-  * 命名路由
+  * ~~命名路由~~
+    * 无内置，需要自己实现
 * react-redux
+  * combineReducers只支持单一结构，不支持嵌套
+    * https://stackoverflow.com/questions/43290107/combine-redux-reducers-without-adding-nesting
+  * action只支持单一结构，不支持嵌套
 * react-i18n
 * react-ui组件库及ui组件库开发
   * ant-design
