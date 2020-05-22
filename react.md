@@ -8,6 +8,9 @@
   * context
 * react-cli
   * create-react-app
+    * cra-template
+    * cra-template-typescript
+    * react-scripts
 * react-router
   * 路由正则
   * 路由传参
@@ -18,9 +21,9 @@
   * ~~命名路由~~
     * 无内置，需要自己实现
 * react-redux
-  * combineReducers只支持单一结构，不支持嵌套
+  * *combineReducers只支持单一结构，不支持嵌套*
     * https://stackoverflow.com/questions/43290107/combine-redux-reducers-without-adding-nesting
-  * action只支持单一结构，不支持嵌套
+  * *action只支持单一结构，不支持嵌套*
 * react-i18n
 * react-ui组件库及ui组件库开发
   * ant-design
