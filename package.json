@@ -21,6 +21,6 @@
     "rxjs": "^6.1.0"
   },
   "devDependencies": {
-    "pushstate-server": "^3.0.1"
+    "pushstate-server": "^3.1.0"
   }
 }
